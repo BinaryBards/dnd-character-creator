@@ -1,14 +1,14 @@
 import Head from "next/head";
 import { useSession, signIn, signOut } from "next-auth/react";
+import { Button } from "@mui/material";
 
 export default function Home() {
-  const { data: session } = useSession();
+  // const { data: session } = useSession();
 
-  console.log(session);
   return (
     <>
       <Head>
-        <title>D&D Character Creator</title>
+        <title>Rapid D&D</title>
         <meta
           name="description"
           content="Dungeons and Dragons character generator using AI to complete an entire character from scratch"
@@ -17,8 +17,10 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main>
-        <button onClick={signIn}>Sign In</button>{" "}
-        <button onClick={signOut}>Sign Out</button>
+        <Button onClick={signIn}>Sign In</Button>
+        <Button variant="outline" onClick={signOut}>
+          Sign Out
+        </Button>
       </main>
     </>
   );
