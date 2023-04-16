@@ -17,6 +17,8 @@ root
 |    |
 |    +-- pages             # all routing is based on this directory.
 |    |
+|    +-- theme             # MUI theme files
+|    |
 |    +-- utils             # utility modules
 |
 +-- .env.example           # An example of what vars the .env file should contain
