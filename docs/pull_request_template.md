@@ -22,7 +22,7 @@ Check off each of these items before you merge the pull request:
 - [ ] Are your changes following the DRY principle?
 - [ ] Has your code been reviewed by a peer?
 - [ ] Have you written relevant tests if applicable?
-- [ ] When its time to merge, did you make sure to `squash and merge`?
+- [ ] When its time to merge, make sure to `squash and merge`?
 
 Check off each of these items after you merge the pull request:
 - [ ] Have you deleted your branch after the merge?
