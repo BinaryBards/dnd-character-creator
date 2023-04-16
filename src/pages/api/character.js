@@ -1,8 +1,8 @@
 import { Configuration, OpenAIApi } from "openai";
 import { isEmpty } from "lodash";
 
-import { getCharacterPrompt } from "@/utility/prompts";
-import { formatCharacterData } from "@/utility/format";
+import { getCharacterPrompt } from "@/utils/prompts";
+import { formatCharacterData } from "@/utils/format";
 
 /*
  * backstory prompt for later:
