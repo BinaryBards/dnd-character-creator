@@ -1,5 +1,5 @@
-### 🎟 Github Issue
-Link to the github issue ticket
+### 🎟 Jira Issue
+Link to the Jira issue ticket
 
 ### 🛠 Changes being made
 Here give examples of the changes being made in this pull request. Include an itemized list if you can. It will help the reviewer!
