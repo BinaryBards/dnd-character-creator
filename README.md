@@ -11,6 +11,7 @@ The fast AI character sheet generator that you deserve!
 - [🧱 Components and Styling](docs/components-and-styling.md)
 - [🗃️ Database](docs/database.md)
 - [🌐 Deployment](docs/deployment.md)
+- [⚙ Github Workflow](docs/github-workflow.md)
 - [🗄️ Project Structure](docs/project-structure.md)
 - [🧪 Testing](docs/testing.md)
 - [📁 Typescript](docs/typescript.md)
