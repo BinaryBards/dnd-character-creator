@@ -14,7 +14,12 @@ const LinkBehaviour = forwardRef(function LinkBehaviour(props, ref) {
 */
 
 // Create default instance of MUI theme
-let theme = createTheme();
+let theme = createTheme({
+  palette: {
+    gradient: { brand: BRAND_GRADIENT },
+    primary: { main: "#42E695" },
+  },
+});
 
 // Our custom theme with overrides which will be exported and used in our theme provider.
 theme = createTheme({
@@ -37,13 +42,13 @@ theme = createTheme({
       },
       styleOverrides: {
         containedPrimary: {
-          background: BRAND_GRADIENT,
+          background: theme.palette.gradient.brand,
           color: theme.palette.text.primary,
         },
       },
     },
   },
-  palette: {},
+  palette: { ...theme.palette },
 });
 
 export default theme;
