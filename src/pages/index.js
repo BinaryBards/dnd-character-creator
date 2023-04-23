@@ -5,6 +5,9 @@ import { ChevronRight as ChevronRightIcon } from "@mui/icons-material";
 
 import LandingLayout from "src/components/layouts/LandingLayout";
 import HorizontalLogo from "src/components/svg/HorizontalLogo";
+
+const WIDTH_AND_PADDING = 448;
+
 export default function Home() {
   // const { data: session } = useSession();
 
@@ -21,15 +24,18 @@ export default function Home() {
       </Head>
       <LandingLayout>
         <Box
-          sx={{
+          sx={(theme) => ({
             width: 400,
             display: "flex",
             flexDirection: "column",
             alignItems: "center",
             gap: 5,
-          }}
+            [theme.breakpoints.down(WIDTH_AND_PADDING)]: {
+              width: "100%",
+            },
+          })}
         >
-          <HorizontalLogo />
+          <HorizontalLogo width="100%" />
           <Typography
             variant="h6"
             sx={{
