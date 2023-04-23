@@ -6,7 +6,10 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "storybook": "storybook dev -p 6006",
+    "build-storybook": "storybook build",
+    "chromatic": "npx chromatic --project-token=2ec91b4149a4"
   },
   "dependencies": {
     "@emotion/react": "^11.10.6",
@@ -32,8 +35,20 @@
     "node": ">=16.0.0 <17.0.0"
   },
   "devDependencies": {
+    "@storybook/addon-essentials": "^7.0.6",
+    "@storybook/addon-interactions": "^7.0.6",
+    "@storybook/addon-links": "^7.0.6",
+    "@storybook/blocks": "^7.0.6",
+    "@storybook/nextjs": "^7.0.6",
+    "@storybook/react": "^7.0.6",
+    "@storybook/testing-library": "^0.0.14-next.2",
     "@types/node": "18.15.11",
     "@types/react": "18.0.35",
-    "prisma": "^4.12.0"
-  }
+    "chromatic": "^6.17.3",
+    "eslint-plugin-storybook": "^0.6.11",
+    "prisma": "^4.12.0",
+    "storybook": "^7.0.6"
+  },
+  "readme": "ERROR: No README data found!",
+  "_id": "dnd-character-creator@0.1.0"
 }
