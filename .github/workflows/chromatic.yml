@@ -4,12 +4,12 @@
 name: "Chromatic"
 
 # Event for the workflow
-on: pull_request
+on: label
 
 # List of jobs
 jobs:
   chromatic-deployment:
-    if: github.event.pull_request.merged == true
+    if: ${{ github.event.label.name == 'Deploy Chromatic' }}
     # Operating System
     runs-on: ubuntu-latest
     # Job steps
